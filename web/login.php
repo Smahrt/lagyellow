@@ -46,7 +46,7 @@
                                     <label for="password">Password</label>
                                 </div>
                                 <div class="form-group-btn">
-                                    <button class="btn btn-floating-action btn-primary" type="submit"><i class="fa fa-unlock"></i></button>
+                                    <button class="btn ink-reaction btn-default" type="submit"><i class="md md-arrow-forward"></i></button>
                                     <p class="help-block"><a href="#">Not an Admin?</a></p>
                                 </div>
 							</form>

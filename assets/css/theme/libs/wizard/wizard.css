@@ -607,7 +607,7 @@
   -webkit-transition: border-color 0.4s linear;
   -o-transition: border-color 0.4s linear;
   transition: border-color 0.4s linear;
-  border-color: #3f51b5;
+  border-color: #0d0d0d;
 }
 .form-wizard.form-wizard-horizontal .nav li.active .title,
 .form-wizard.form-wizard-horizontal .nav li:hover .title {
@@ -615,8 +615,8 @@
 }
 .form-wizard.form-wizard-horizontal .nav li.done .step {
   color: #ffffff;
-  border-color: #3f51b5;
-  background-color: #3f51b5;
+  border-color: #0d0d0d;
+  background-color: #0d0d0d;
   font-weight: 500;
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;

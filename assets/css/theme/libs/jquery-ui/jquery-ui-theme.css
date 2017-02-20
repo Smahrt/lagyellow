@@ -2130,13 +2130,13 @@ body .ui-tooltip {
 }
 .ui-menu .ui-menu-item a.ui-state-focus,
 .ui-menu .ui-menu-item a.ui-state-active {
-  background: #3f51b5;
+  background: #0d0d0d;
 }
 .ui-slider.ui-widget-content {
   background: #e5e5e6;
 }
 .ui-widget-header {
-  background: #3f51b5;
+  background: #0d0d0d;
   color: #ffffff;
 }
 .ui-widget-header a {
@@ -2145,13 +2145,13 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-  border-color: #3f51b5;
+  border-color: #0d0d0d;
 }
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-  border-color: #3f51b5;
-  background: #3f51b5;
+  border-color: #0d0d0d;
+  background: #0d0d0d;
   color: #ffffff;
 }
 .ui-sortable .ui-state-highlight {
@@ -2205,7 +2205,7 @@ body .ui-tooltip {
   height: 16px;
   border-color: transparent;
   border-radius: 50%;
-  background: #3f51b5;
+  background: #0d0d0d;
 }
 .ui-slider .ui-slider-handle:focus,
 .ui-slider .ui-slider-handle.ui-state-hover {

@@ -33,7 +33,7 @@
                 <div class="headerbar-left">
 					<ul class="header-nav header-nav-options">
 						<li>
-							<a class="btn btn-icon-toggle" data-toggle="offcanvas" href="#navbar">
+							<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
 								<i class="fa fa-bars"></i>
 							</a>
 						</li>
@@ -61,95 +61,150 @@
 
 			<!-- BEGIN OFFCANVAS LEFT -->
 			<div class="offcanvas">
-                
-                <!-- BEGIN MENUBAR-->
-                <div id="navbar" class="offcanvas-pane brand-primary width-8">
-                    <div class="offcanvas-body">
-                        <!-- BEGIN MAIN MENU -->
-                        <ul id="main-menu" class="gui-controls">
-
-                            <!-- BEGIN DASHBOARD -->
-                            <li>
-                                <a href="../html/dashboards/dashboard.html" >
-                                    <div class="gui-icon"><i class="md md-home"></i></div>
-                                    <span class="title">Dashboard</span>
-                                </a>
-                            </li><!--end /menu-li -->
-                            <!-- END DASHBOARD -->
-
-                            <!-- BEGIN LEVELS -->
-                            <li class="gui-folder">
-                                <a>
-                                    <div class="gui-icon"><i class="fa fa-folder-open fa-fw"></i></div>
-                                    <span class="title">Menu levels demo</span>
-                                </a>
-                                <!--start submenu -->
-                                <ul>
-                                    <li><a href="#"><span class="title">Item 1</span></a></li>
-                                    <li><a href="#"><span class="title">Item 1</span></a></li>
-                                    <li class="gui-folder">
-                                        <a href="javascript:void(0);">
-                                            <span class="title">Open level 2</span>
-                                        </a>
-                                        <!--start submenu -->
-                                        <ul>
-                                            <li><a href="#"><span class="title">Item 2</span></a></li>
-                                            <li class="gui-folder">
-                                                <a href="javascript:void(0);">
-                                                    <span class="title">Open level 3</span>
-                                                </a>
-                                                <!--start submenu -->
-                                                <ul>
-                                                    <li><a href="#"><span class="title">Item 3</span></a></li>
-                                                    <li><a href="#"><span class="title">Item 3</span></a></li>
-                                                    <li class="gui-folder">
-                                                        <a href="javascript:void(0);">
-                                                            <span class="title">Open level 4</span>
-                                                        </a>
-                                                        <!--start submenu -->
-                                                        <ul>
-                                                            <li><a href="#"><span class="title">Item 4</span></a></li>
-                                                            <li class="gui-folder">
-                                                                <a href="javascript:void(0);">
-                                                                    <span class="title">Open level 5</span>
-                                                                </a>
-                                                                <!--start submenu -->
-                                                                <ul>
-                                                                    <li><a href="#"><span class="title">Item 5</span></a></li>
-                                                                    <li><a href="#"><span class="title">Item 5</span></a></li>
-                                                                </ul><!--end /submenu -->
-                                                            </li><!--end /submenu-li -->
-                                                        </ul><!--end /submenu -->
-                                                    </li><!--end /submenu-li -->
-                                                </ul><!--end /submenu -->
-                                            </li><!--end /submenu-li -->
-                                        </ul><!--end /submenu -->
-                                    </li><!--end /submenu-li -->
-                                </ul><!--end /submenu -->
-                            </li><!--end /menu-li -->
-                            <!-- END LEVELS -->
-
-                        </ul><!--end .main-menu -->
-                        <!-- END MAIN MENU -->
-
-                        <div>
-                            <small class="no-linebreak hidden-folded">
-                                <span class="opacity-75">Powered by </span> <strong>Cedarview</strong>
-                            </small>
-                        </div>
-                    </div>
-                </div><!--end #menubar-->
-                <!-- END MENUBAR -->
 
 			</div><!--end .offcanvas-->
 			<!-- END OFFCANVAS LEFT -->
 
 			<!-- BEGIN CONTENT-->
 			<div id="content">
+                <section>
+                    <div class="section-body">
+                        <div class="row">
+                            <header>
+                                <span class="text-xxl">This Week/</span><strong class="text-xl">All Time</strong><br>
+                            </header>
+                        
+                            <div class="col-md-3">
+                                <div class="card ink-reaction">
+                                    <div class="card-body">
+                                        <div class="no-margin"><!-- Alert only if there is a change -->
+                                            <h1 class="pull-right text-primary"><i class="md md-directions-car"></i></h1>
+                                            <span class="text-xxxl">43/</span><strong class="text-xl">234</strong><br>
+                                            <span class="opacity-50 text-lg">Drivers</span>
+                                        </div>
+                                    </div><!--end .card-body -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card ink-reaction">
+                                    <div class="card-body">
+                                        <div class="no-margin"><!-- Alert only if there is a change -->
+                                            <h1 class="pull-right text-primary"><i class="md md-pin-drop"></i></h1>
+                                            <span class="text-xxxl">36/</span><strong class="text-xl">978</strong><br>
+                                            <span class="opacity-50 text-lg">Trips</span>
+                                        </div>
+                                    </div><!--end .card-body -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card ink-reaction">
+                                    <div class="card-body">
+                                        <div class="no-margin"><!-- Alert only if there is a change -->
+                                            <h1 class="pull-right text-primary"><i class="md md-group-add"></i></h1>
+                                            <span class="text-xxxl">21/</span><strong class="text-xl">567</strong><br>
+                                            <span class="opacity-50 text-lg">Users</span>
+                                        </div>
+                                    </div><!--end .card-body -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card-head">
+                                    <header>Driver Subscription Stats</header>
+                                </div>
+                                <div class="card-body height-8">
+                                    <strong>201</strong> Active<!-- divide $(this) number by the total drivers and get the percentage -->
+                                    <div class="progress progress-hairline">
+                                        <div class="progress-bar progress-bar-success" style="width:83%"></div><!-- use percentage above here -->
+                                    </div>
+                                    <strong>24</strong> Expiring<!-- divide $(this) number by the total drivers and get the percentage -->
+                                    <div class="progress progress-hairline">
+                                        <div class="progress-bar progress-bar-warning" style="width:10%"></div><!-- use percentage above here -->
+                                    </div>
+                                    <strong>6</strong> Grace Period<!-- divide $(this) number by the total drivers and get the percentage -->
+                                    <div class="progress progress-hairline">
+                                        <div class="progress-bar progress-bar-accent" style="width:2%"></div><!-- use percentage above here -->
+                                    </div>
+                                    <strong>12</strong> Inactive<!-- divide $(this) number by the total drivers and get the percentage -->
+                                    <div class="progress progress-hairline">
+                                        <div class="progress-bar progress-bar-danger" style="width:5%"></div><!-- use percentage above here -->
+                                    </div>
+                                </div><!--end .card-body -->
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
                 
 			</div><!--end #content-->
 			<!-- END CONTENT -->
+            
+            <!-- BEGIN MENUBAR -->
+            <div id="menubar" class="menubar-inverse animate">
+				<div class="menubar-fixed-panel">
+					<div>
+						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="expanded">
+						<a href="../index.php">
+							<span class="text-lg text-bold text-primary ">LAGOS YELLOW</span>
+						</a>
+					</div>
+				</div>
+                    <div class="menubar-scroll-panel">
 
+                        <!-- BEGIN MAIN MENU -->
+                        <ul id="main-menu" class="gui-controls">
+
+                            <!-- BEGIN DASHBOARD -->
+                            <li>
+                                <a href="../index.php">
+                                    <div class="gui-icon"><i class="md md-dashboard"></i></div>
+                                    <span class="title">Dashboard</span>
+                                </a>
+                            </li><!--end /menu-li -->
+                            <!-- END DASHBOARD -->
+
+                            <!-- BEGIN PARK -->
+                            <li>
+                                <a href="manage_park.php">
+                                    <div class="gui-icon"><i class="md md-pin-drop"></i></div>
+                                    <span class="title">Manage Park</span>
+                                </a>
+                            </li><!--end /menu-li -->
+                            <!-- END PARK -->
+                            
+                            <!-- BEGIN USER -->
+                            <li>
+                                <a href="manage_users.php">
+                                    <div class="gui-icon"><i class="md md-account-circle"></i></div>
+                                    <span class="title">Manage Users</span>
+                                </a>
+                            </li><!--end /menu-li -->
+                            <!-- END USER -->
+
+                            <!-- BEGIN DRIVER -->
+                            <li>
+                                <a href="manage_drivers.php">
+                                    <div class="gui-icon"><i class="md md-directions-car"></i></div>
+                                    <span class="title">Manage Drivers</span>
+                                </a>
+                            </li><!--end /menu-li -->
+                            <!-- END DRIVER -->
+
+                        </ul><!--end .main-menu -->
+                        <!-- END MAIN MENU -->
+
+                        <div class="menubar-foot-panel">
+                            <small class="no-linebreak hidden-folded">
+                                <span class="opacity-75">Powered by </span> <strong>Cedarview</strong>
+                            </small>
+                        </div>
+                    </div><!--end .menubar-scroll-panel-->
+			</div>
+            <!-- END MENUBAR -->
+            
 			<!-- BEGIN OFFCANVAS RIGHT -->
 			<div class="offcanvas">
 
